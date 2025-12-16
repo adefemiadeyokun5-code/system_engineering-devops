@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# A Bash script that runs forever and handles SIGTERM
+# A Bash script that runs forever and ignores SIGTERM
 
 trap 'echo "I am invincible!!!"' SIGTERM
 
