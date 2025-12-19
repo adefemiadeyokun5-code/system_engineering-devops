@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
-# Loop that answers SIGTERM with OK
 trap 'echo OK' TERM
-while :; do
-    echo "To infinity and beyond"
-    sleep 2
-done
+exec bash -c 'while :; do echo "To infinity and beyond"; sleep 2; done'
