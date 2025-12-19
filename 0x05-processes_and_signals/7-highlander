@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Prints "To infinity and beyond" forever and answers SIGTERM with OK
+# Loop that answers SIGTERM with OK
 trap 'echo OK' TERM
 while :; do
     echo "To infinity and beyond"
